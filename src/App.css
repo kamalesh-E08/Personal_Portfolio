@@ -1,0 +1,359 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #121212; /* Darker background for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e0e0; /* Light text */
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e0e0e0; /* Light text */
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Accent color */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #7e9ab852; /* Keep the hero section bright for contrast */
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #007bff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f1f1f1;
+}
+.cta-button.secondary:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #1a1a1a; /* Dark background */
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #e0e0e0; /* Light text */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 12px; */
+
+}
+
+.about-content img{
+  border-radius: 175px;
+  width: 400px;
+  height: 400px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid #007bff; /* Accent color */
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: left;
+  color: #e0e0e0; /* Light text */
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #1a1a1a; /* Dark background */
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #e0e0e0; /* Light text */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #121212; /* Darker background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #e0e0e0; /* Light text */
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #e0e0e0; /* Light text */
+}
+
+.project-link {
+  display: block;
+  padding: 10px 0;
+  background-color: #007bff; /* Accent color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3; /* Darker accent color */
+}
+
+.achievements {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #121212; /* Darker background */
+}
+
+.achievements h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #e0e0e0; /* Light text */
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  background-color: #1a1a1a; /* Dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.achievement-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Light text */
+}
+
+.achievement-card p {
+  font-size: 16px;
+  color: #e0e0e0; /* Light text */
+}
+
+
+/* Contact Section */
+.contact {
+  background-color: #121212; /* Darker background */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #e0e0e0; /* Light text */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #e0e0e0; /* Light text */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333; /* Darker border */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.submit-button {
+  background-color: #007bff; /* Accent color */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker accent color */
+}
+
+/* Footer */
+.footer {
+  background-color: #121212; /* Darker background */
+  color: #e0e0e0; /* Light text */
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #e0e0e0; /* Light text */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #007bff; /* Accent color */
+}
