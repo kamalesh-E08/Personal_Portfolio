@@ -59,11 +59,11 @@ const App = () => {
           <h2 className="slide-in">Projects</h2>
           <div className="projects-grid">
             <div className="project-card slide-in">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/300"
                 alt="Project 1"
                 className="project-image"
-              />
+              /> */}
               <h3>Qr-Generator</h3>
               <p>QR-Generator is an efficient tool for creating customised QR codes with dynamic styling, saving them as images, and ensuring security by removing the image after saving..</p>
               <a href="https://github.com/kamalesh-E08/QR-Generator" className="project-link">
@@ -72,11 +72,11 @@ const App = () => {
             </div>
 
             <div className="project-card slide-in">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/300"
                 alt="Project 2"
                 className="project-image"
-              />
+              /> */}
               <h3>Certify</h3>
               <p>Certify is a Flask - based tool that automates bulk certificate distribution via email using recipient details from an Excel sheet, built with HTML, CSS and Python.</p>
               <a href="https://github.com/kamalesh-E08/Certify" className="project-link">
@@ -84,11 +84,11 @@ const App = () => {
               </a>
             </div>
             <div className="project-card slide-in">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/300"
                 alt="Project 3"
                 className="project-image"
-              />
+              /> */}
               <h3>Finance management</h3>
               <p>Finance Management helps users track, manage, and visualize financial data with interactive charts and seamless integration.</p>
               <a href="https://github.com/kamalesh-E08/React_Finance_Management_FE" className="project-link">
@@ -96,11 +96,11 @@ const App = () => {
               </a>
             </div>
             <div className="project-card slide-in">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/300"
                 alt="Project 4"
                 className="project-image"
-              />
+              /> */}
               <h3>Face attendance system </h3>
               <p>this implements a face recognition-based attendance system that sends attendance details via email. Built using Python, it includes face detection and email notification features</p>
               <a href="https://github.com/kamalesh-E08/Face-attendance-system-with-email" className="project-link">
