@@ -7,5 +7,5 @@ export default defineConfig({
   root: '.', // Root directory where index.html is located
   build: {
   outDir: 'build', // Output directory for the build
-}
+},
 })
