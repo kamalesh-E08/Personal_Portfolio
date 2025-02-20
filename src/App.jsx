@@ -1,6 +1,6 @@
 import "./App.css";
 import profile from "./assets/profile1.jpg";
-import MY_CV from "../public/Kamalesh_711522BCB024_RESUME.pdf";
+import MY_CV from "./assets/Kamalesh_711522BCB024_RESUME.pdf";
 const App = () => {
   return (
     <div className="portfolio">
