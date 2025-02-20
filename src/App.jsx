@@ -75,7 +75,7 @@ const App = () => {
             <div className="project-card slide-in">
               <h3>Personal - Portfolio</h3>
               <p> Developed a responsive personal portfolio website using HTML, CSS, JavaScript, and React to showcase my skills, projects, and achievements.</p>
-              <a href="https://github.com/kamalesh-E08/Certify" className="project-link">
+              <a href="https://github.com/kamalesh-E08/Personal_Portfolio" className="project-link">
                 View Project →
               </a>
             </div>
